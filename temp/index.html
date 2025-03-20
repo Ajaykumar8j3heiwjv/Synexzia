@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SYNEXZIA</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="logo for web.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="logo for web.png" alt="Logo" /></a>
+      <ul>
+        <li><a href="#" class="active">Contact Us</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="stars.png" id="stars" />
+      <img src="moon.png" id="moon" />
+      <img src="mountains_behind.png" id="mountains_behind" />
+      <h2 id="text">SYNEXZIA</h2>
+      <a href="#" class="explore-btn" id="btn">Explore</a>
+      <img src="mountains_front.png" id="mountains_front" />
+    </section>
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source
+          src="WhatsApp Video 2025-03-14 at 21.47.38_c88ab3fa.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="caption">
+        <h2>WELCOME TO INFORMATION TECHNOLOGY SYMPOSIUM</h2>
+      </div>
+    </div>
+
+    <div class="sec" id="sec">
+      <h2>About Symposium</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nam
+        praesentium laborum corrupti ad, nobis iste ab recusandae dolorem omnis
+        ut dolores at cum, obcaecati modi provident harum aspernatur.<br /><br />
+        Perferendis! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Quasi fugit molestias ducimus, pariatur a esse similique nobis sunt
+        distinctio dolorum sequi culpa, nam harum quaerat fugiat.<br />
+      </p>
+      <br /><br />
+
+      <h2>About symposium theme</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nam
+        praesentium laborum corrupti ad, nobis iste ab recusandae dolorem omnis
+        ut dolores at cum, obcaecati modi provident harum aspernatur.<br /><br />
+        Perferendis! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Quasi fugit molestias ducimus, pariatur a esse similique nobis sunt
+        distinctio dolorum sequi culpa, nam harum quaerat fugiat.<br />
+      </p>
+      <br /><br />
+    </div>
+
+    <div
+      class="main"
+      id="main"
+      style="background: url('Background image.jpeg')"
+    >
+      <h1 style="color: rgb(234, 240, 230)">Technical Event</h1>
+
+      <div class="container">
+        <div class="card" style="--i: -2" data-text="Team Coding">
+          <img src="5a2d9fc09eca4ca7caff26494b5ccfbf.jpg" />
+        </div>
+        <div class="card" style="--i: -1" data-text="Design Thinking">
+          <img src="cec1764412a59de8994f767cedea1d36.jpg" />
+        </div>
+        <div class="card" style="--i: 0" data-text="Paper Presentation">
+          <img src="download.jpeg" />
+        </div>
+        <div class="card" style="--i: 1" data-text="code Challenge">
+          <img src="loki_s_trickster_grin_by_inkimagine_dj7fz8r-pre.jpg" />
+        </div>
+        <div class="card" style="--i: 2" data-text="Crack the interview">
+          <img src="images.jpeg" />
+        </div>
+        <h3 style="text-shadow: #52c234">CHOOSE IT</h3>
+      </div>
+      <div class="register-cont">
+        <a href="#" class="btn1" id="btn">Register Now</a>
+      </div>
+    </div>
+
+    <div
+      class="main1"
+      id="main1"
+      style="background: linear-gradient(#52c234, #061700)"
+    >
+      <div class="carousel">
+        <h2>NON-TECHNICAL EVENT</h2>
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">Treasure Hunt</div>
+            <div class="num">01</div>
+            <img src="4de2254e81ad0b083636b3f7cebfc1e6.jpg" />
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">Valorant</div>
+            <div class="num">02</div>
+            <img src="5a2d9fc09eca4ca7caff26494b5ccfbf.jpg" />
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">Debate</div>
+            <div class="num">03</div>
+            <img src="loki_s_trickster_grin_by_inkimagine_dj7fz8r-pre.jpg" />
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">Photography</div>
+            <div class="num">04</div>
+            <img src="download.jpeg" />
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">Connection</div>
+            <div class="num">05</div>
+            <img src="images.jpeg" />
+          </div>
+        </div>
+
+      </div>
+      <h3>CHOOSE IT</h3>
+      <div class="register-cont">
+        <a href="#" class="btn1" id="btn">Register Now</a>
+      </div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor cursor2"></div>
+    <script src="script.js"></script>
+    <script>
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let mountains_behind = document.getElementById("mountains_behind");
+      let btn = document.getElementById("btn");
+      let text = document.getElementById("text");
+      let mountains_front = document.getElementById("mountains_front");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        moon.style.top = value * 1.05 + "px";
+        mountains_behind.style.top = value * 0.5 + "px";
+        mountains_front.style.top = value * 0 + "px";
+        text.style.marginLeft = value * 1 + "px";
+        text.style.marginTop = value * 1.5 + "px";
+        btn.style.marginTop = value * 1.5 + "px";
+        header.style.top = value * 0.5 + "px";
+      });
+    </script>
+  </body>
+</html>
