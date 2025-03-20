@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SYNEXZIA</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./cards.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="logo for web.png" type="image/x-icon" />
@@ -38,7 +39,7 @@
 
     <!-- Hero Section -->
      <div class="hero-bg">
-         <video src="./assets/bg-video.mp4" autoplay loop ></video>
+         <video src="./assets/bg-video.mp4" autoplay loop></video>
      </div>
     <section id="home" class="hero">
         <div class="container">
@@ -51,6 +52,8 @@
             </div>
         </div>
     </section>
+
+    <canvas></canvas>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -78,7 +81,42 @@
     <section id="events" class="events">
         <div class="container">
             <h2 class="section-title">Technical Events</h2>
-            <div class="events-grid">
+            <div class="cards container">
+                <div class="box">
+                  <span></span>
+                  <div class="content">
+                    <h2>Card one</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <span></span>
+                  <div class="content">
+                    <h2>Card two</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <span></span>
+                  <div class="content">
+                    <h2>Card Three</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                      <h2>Card Four</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+              </div>
+            <!-- <div class="events-grid">
                 <div class="event-card">
                     <div class="event-img">
                         <img src="./assets/images.jpeg" alt="Paper Presentation">
@@ -111,8 +149,9 @@
                         <h3>Reverse Engine</h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
+            
     </section>
 
     <!-- Workshops Section -->
@@ -334,5 +373,6 @@
     </a>
 
     <script src="scripts.js"></script>
+    <script src="./bg-animation.js"></script>
 </body>
 </html>
