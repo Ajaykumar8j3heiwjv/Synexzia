@@ -12,3 +12,14 @@ for (let el of Array.from(navLinks.children)) {
     hamburgerIcon.classList.remove("cross");
   });
 }
+
+const navAElements = Array.from(document.body.querySelectorAll('.nav-links a'));
+
+function setMeAsActive(e) {
+  for (let el of navAElements) {
+    el.classList.remove('active');
+  }
+  e.target.classList.add('active');
+}
+
+navAElements.forEach(e => e.onclick = e => setMeAsActive(e))
