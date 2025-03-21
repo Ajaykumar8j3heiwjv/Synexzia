@@ -823,6 +823,10 @@ footer {
   transition: all var(--transition-speed) ease;
 }
 
+.social-links svg {
+  width: 20px;
+}
+
 .social-links a:hover {
   background: var(--primary-color);
   transform: translateY(-5px);
