@@ -45,7 +45,9 @@
   transition: 0.5s;
   filter: blur(30px);
 }
-
+.cards.container .btn{
+  position: absolute;
+}
 .cards.container .box:hover:before,
 .cards.container .box:hover:after {
   transform: skewX(0deg);
