@@ -1,9 +1,19 @@
+.events .container {
+  padding: 0px;
+  margin: 0px auto;
+}
+
 .cards.container {
-  display: flex;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   padding: 40px 0;
+  margin: 0px;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -14,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 30px;
+  margin: 40px 0px;
   transition: 0.5s;
 }
 
@@ -45,7 +55,7 @@
   transition: 0.5s;
   filter: blur(30px);
 }
-.cards.container .btn{
+.cards.container .btn {
   position: absolute;
 }
 .cards.container .box:hover:before,
@@ -57,25 +67,31 @@
 
 .cards.container .box:nth-child(1):before,
 .cards.container .box:nth-child(1):after {
-  background: linear-gradient(315deg, #082713ff, rgb(92, 52, 3), rgb(222, 76, 8), #19A650ff);
+  background: linear-gradient(
+    315deg,
+    #082713ff,
+    rgb(92, 52, 3),
+    rgb(222, 76, 8),
+    #19a650ff
+  );
   /* background: linear-gradient(315deg, #ffbc00, #ff0058); */
   /* background-image: url("./assets/images.jpeg"); */
 }
 
 .cards.container .box:nth-child(2):before,
 .cards.container .box:nth-child(2):after {
-  background: linear-gradient(315deg, #0a391a, #efdf03, #d6c23be1, #19A650ff);
+  background: linear-gradient(315deg, #0a391a, #efdf03, #d6c23be1, #19a650ff);
   /* background: linear-gradient(315deg, #03a9f4, #ff0058); */
 }
 
 .cards.container .box:nth-child(3):before,
 .cards.container .box:nth-child(3):after {
-  background: linear-gradient(315deg, #0a391a, #0e7e78, #00d0ff, #19A650ff);
+  background: linear-gradient(315deg, #0a391a, #0e7e78, #00d0ff, #19a650ff);
 }
 
 .cards.container .box:nth-child(4):before,
 .cards.container .box:nth-child(4):after {
-  background: linear-gradient(315deg, #0a391a, #e62bcd, #ff00ee, #19A650ff);
+  background: linear-gradient(315deg, #0a391a, #e62bcd, #ff00ee, #19a650ff);
 }
 
 .cards.container .box span {
@@ -196,4 +212,11 @@
   background: #ffcf4d;
   border: 1px solid rgba(255, 0, 88, 0.4);
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+
+
+@media screen and (max-width: 768px) {
+  .cards.container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
