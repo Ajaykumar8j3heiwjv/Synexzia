@@ -1,3 +1,6 @@
+const heroVideoElt = document.querySelector(".hero-bg video");
+heroVideoElt.play();
+
 const hamburgerIcon = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 
