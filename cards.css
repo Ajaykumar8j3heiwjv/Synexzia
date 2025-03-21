@@ -28,6 +28,10 @@
   transition: 0.5s;
 }
 
+.non-technical .cards.container .box:nth-child(3) {
+  grid-column: span 2 / span 2;
+}
+
 .cards.container .box::before {
   content: " ";
   position: absolute;
@@ -202,9 +206,16 @@
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }
 
+.events.pre-events .container {
+  grid-template-rows: repeat(1, 1fr);
+}
 
 @media screen and (max-width: 768px) {
   .cards.container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .non-technical .cards.container .box:nth-child(3) {
+    grid-column: span 1 / span 1;
   }
 }
