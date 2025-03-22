@@ -194,11 +194,12 @@ header .container {
   z-index: 10;
   overflow: hidden;
   padding: 50px 40px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     rgba(0, 0, 34, 0.7),
     rgba(0, 0, 51, 0.9)
-  );
+  ); */
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
@@ -1094,4 +1095,10 @@ canvas {
 
 .credits a {
   text-decoration: underline;
+}
+
+a.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
