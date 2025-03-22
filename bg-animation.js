@@ -19,7 +19,7 @@ let stars = [];
 
 let pointerX, pointerY;
 
-let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: STAR_COUNT < 180 ? 0.01 : 0.0005 };
 
 let touchInput = false;
 
@@ -29,8 +29,8 @@ step();
 
 window.onresize = resize;
 window.onmousemove = onMouseMove;
-window.ontouchmove = onTouchMove;
-window.ontouchend = onMouseLeave;
+// window.ontouchmove = onTouchMove;
+// window.ontouchend = onMouseLeave;
 document.onmouseleave = onMouseLeave;
 
 function generate() {
