@@ -188,6 +188,40 @@
   padding: 60px 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .box {
+    animation: all 0.8s;
+  }
+  .cards.container .box.to-animate.show:before,
+  .cards.container .box.to-animate.show:after {
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+  }
+
+  .cards.container .box.to-animate span::before {
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+  }
+
+  .cards.container .box.to-animate span:after {
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+  }
+
+  .cards.container .box.to-animate .content {
+    left: -25px;
+    padding: 60px 40px;
+  }
+}
+
+
 .cards.container .box .content h2 {
   font-size: 2em;
   color: #fff;
