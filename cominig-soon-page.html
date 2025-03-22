@@ -11,7 +11,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #111;
+            background: linear-gradient(rgb(170, 6, 230),rgb(230, 9, 186));
             color: white;
             text-align: center;
             font-family: Arial, sans-serif;
@@ -52,24 +52,23 @@
         <button>Notify Me</button>
     </div>
 
-    <script>
+    <!-- <script>
         function updateCountdown() {
             const launchDate = new Date("2025-04-01T00:00:00").getTime();
             const now = new Date().getTime();
             const difference = launchDate - now;
             
             if (difference > 0) {
-                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+                const hours = Math.floor((difference / (10 * 60 * 60)) % 24);
                 const minutes = Math.floor((difference / 1000 / 60) % 60);
                 const seconds = Math.floor((difference / 1000) % 60);
-                document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                document.getElementById("countdown").innerHTML = ` ${hours}h ${minutes}m ${seconds}s`;
             } else {
                 document.getElementById("countdown").innerHTML = "We are live!";
             }
         }
         setInterval(updateCountdown, 1000);
         updateCountdown();
-    </script>
+    </script> -->
 </body>
 </html>
