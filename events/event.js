@@ -10,9 +10,9 @@ function goBack() {
 function register() {
     // You can replace this with your registration logic
     // For example, show a modal or redirect to a registration page
-    alert('Registration form will open here!');
+    // alert('Registration form will open here!');
     // Example redirect:
-    // window.location.href = 'registration-form.html';
+    window.location.href = 'https://forms.gle/QgEmRGXHa66GJtVZA';
 }
 
 // Add some visual effects when the page loads
