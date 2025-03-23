@@ -209,7 +209,7 @@ header .container {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 7rem;
   /* padding: 10px; */
   line-height: 1.2;
   text-transform: uppercase;
@@ -225,7 +225,6 @@ header .container {
 .headname {
   color: var(--text-gold);
   text-shadow: 1px 4px 10px var(--text-gold);
-  font-size: 3.5rem;
 }
 
 .hero-content h1 span::after {
