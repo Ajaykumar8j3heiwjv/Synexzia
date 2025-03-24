@@ -38,6 +38,16 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.content-card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    
+}
+
 .post {
     display: flex;
     width:100%;
