@@ -59,8 +59,10 @@
                 <h1 class="present">Presents</h1>
                 <h1 class="headname" style="font-size: 55px;">SYNEXZIA</h1>
                 <div class="registration-status">
-                    <h2>Registrations <span>Open</span></h2>
+                    <h2>Registrations <span>Opens Now</span></h2>
                 </div>
+                <h2>Event <span>Start's on 5th april</span></h2>
+                <div id="countdown" style="font-size: 36px; text-align: center; margin-top: 20px;">Event start</div>
             </div>
         </div>
     </section>
@@ -334,7 +336,7 @@
                         <h3>How many events can a participant participate in?</h3>
                     </div>
                     <div class="accordion-content">
-                        <p>As participant wish</p>
+                        <p>You can participate in as many as you want</p>
                     </div>
                 </div>
                 <div class="accordion-item to-animate zoom-in">
@@ -342,7 +344,7 @@
                         <h3>What about Cash prize ?</h3>
                     </div>
                     <div class="accordion-content">
-                        <p>Ofcourse, there will be cash prize for the winners</p>
+                        <p>Yes, case prizes will be available for Technical & Pre events</p>
                     </div>
                 </div>
                 <div class="accordion-item to-animate zoom-in">
@@ -350,7 +352,7 @@
                         <h3>What about the venue?</h3>
                     </div>
                     <div class="accordion-content">
-                        <p>The venue is at <a href="https://maps.app.goo.gl/hZgPkJGP5oi4L22FA"><span style="color: rgb(0, 255, 0);">Agni College of Technology<span></a></p>
+                        <p>The venue is at IT Department <a href="https://maps.app.goo.gl/hZgPkJGP5oi4L22FA"><span style="color: rgb(0, 255, 0);">Agni College of Technology<span></a></p>
                     </div>
                 </div>
             </div>
@@ -424,5 +426,26 @@
 
     <script src="scripts.js"></script>
     <script src="./bg-animation.js"></script>
+    <script>
+            function updateCountdown() {
+            const launchDate = new Date("2025-04-05T00:00:00").getTime();
+            const now = new Date().getTime();
+            const difference = launchDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+                
+                document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            } else {
+                document.getElementById("countdown").innerHTML = "We are live!";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
 </body>
 </html>
